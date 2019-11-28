@@ -1,0 +1,21 @@
+server:
+  port: 8888
+ 
+ 
+ 
+ 
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/PinakiSahoo/springcloud-config-git
+          #username:uname
+          #password:pass
+          search-paths:
+          - 'station*'
+  security:
+    user:
+      name: pinaki
+      password: pinaki
+    

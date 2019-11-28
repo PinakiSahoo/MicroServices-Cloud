@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>Security UI</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+</head>
+
+<body>
+	
+  <h1>  Simple ui   </h1>       
+ <table class="table table-striped">
+  <tr><th>Station ID</th>
+      <th> Plate</th>
+      <th>TimeStamp</th>
+      <tr th:each="toll:${tolls}">
+      <td th:text="${toll.stationid}"></td>
+      <td th:text="${toll.licenseplate}"></td>
+      <td th:text="${toll.timestamp}"></td>
+      </tr>
+      
+              
+       
+  
+  </table>                                                                                                       
+
+</body>
+
+</html>
